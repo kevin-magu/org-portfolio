@@ -1,0 +1,73 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: #27282b;
+}
+.hero-section{
+    position: relative;
+    width: 80%;
+    height: 700px;
+    margin-top: 60px;
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-radius: 10px;
+    display: flex;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.welcome-message{
+    width: 40%;margin: 30px;
+    font-family: 'Genos', sans-serif;
+    font-size: 38px;
+    margin-top: 140px;
+    
+}
+.hero-section .kevinimage{
+    margin-top: -50px;
+    transform: scale(.7);
+    position: absolute;
+    right: -56px;
+}
+.hero-section .android{
+    transform: scale(.5);
+    position: absolute;
+    left: 46%;
+    bottom: -189px;
+}
+.hero-section .windows{
+    transform: scale(.2);
+    position: absolute;
+    left: -80px;
+    top: -60px;
+}
+.hero-section .vscode{
+    transform: scale(.15);
+    position: absolute;
+    left: -137px;
+    bottom: -120px;
+}
+.hero-section .github{
+    transform: scale(.16);
+    position: absolute;
+    right: -130px;
+    top: -120px;
+}
+.hero-section .iphone{
+    transform: scale(.1);
+    position: absolute;
+    right: -190px;
+    bottom: -214px;
+}
+.soen{
+    transform: scale(.6);
+    position: absolute;
+    left: 0px;
+    
+}
