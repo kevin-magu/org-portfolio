@@ -8,7 +8,7 @@ body{
 }
 .hero-section{
     position: relative;
-    width: 80%;
+    width: 86%;
     height: 700px;
     margin-top: 60px;
     background: #E0EAFC;  /* fallback for old browsers */
@@ -71,6 +71,7 @@ body{
     transform: scale(.6);
     position: absolute;
     left: 0px;
+    top: 50px;
     
 }
 #back-to-top{
@@ -90,15 +91,43 @@ nav{
 ul{
     position: absolute;
     display: flex;
-    left: 33%;
+    left: 30%;
     top: 40px;
 }
 ul li{
     list-style: none;
-}
-ul li i{
+    width: 20px;
     color: #CB6CE6;
     transform: scale(2);
     margin: 10px;
     margin-right: 150px;
+    width: auto;
+}
+
+ul li a{
+    color: #CB6CE6;
+}
+#aboutme-icon::after{
+    content: 'About Me';
+    font-size: 10px;
+    font-family: 'Genos', sans-serif;
+    margin-left: 1px;
+}
+#designsamples-icon::after{
+    content: 'Design Work';
+    font-size: 10px;
+    font-family: 'Genos', sans-serif;
+    margin-left: 1px;
+}
+#pricing-icon::after{
+    content: 'Pricing';
+    font-size: 10px;
+    font-family: 'Genos', sans-serif;
+    margin-left: 1px;
+}
+#contacts-icon::after{
+    content: 'Contact Me';
+    font-size: 10px;
+    font-family: 'Genos', sans-serif;
+    margin-left: 1px;
 }
