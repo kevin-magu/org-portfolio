@@ -21,6 +21,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: -80px;
+    margin-bottom: 100px;
 }
 .welcome-message{
     width: 40%;margin: 30px;
@@ -70,4 +72,33 @@ body{
     position: absolute;
     left: 0px;
     
+}
+#back-to-top{
+    transform: scale(3);
+    position: absolute;
+    right: 60px;
+    bottom: 60px;
+    color: #E0EAFC;
+}
+.canvanav{
+    transform: scale(.7);
+    margin-left: 130px;
+}
+nav{
+    position: relative;
+}
+ul{
+    position: absolute;
+    display: flex;
+    left: 33%;
+    top: 40px;
+}
+ul li{
+    list-style: none;
+}
+ul li i{
+    color: #CB6CE6;
+    transform: scale(2);
+    margin: 10px;
+    margin-right: 150px;
 }
