@@ -16,6 +16,8 @@ body{
     background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 10px;
     display: flex;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
 }
 .container{
     display: flex;
@@ -29,7 +31,11 @@ body{
     font-family: 'Genos', sans-serif;
     font-size: 38px;
     margin-top: 140px;
+    margin-left: 80px;
     
+}
+.android,.iphone,.windows.github.kevinimage,.welcome-message{
+    transform: translateZ(40px);
 }
 .hero-section .kevinimage{
     margin-top: -50px;
@@ -137,6 +143,13 @@ ul li a{
     font-family: 'Genos', sans-serif;
     margin-left: 1px;
 }
+.windows:hover,
+  .github:hover,
+  .vscode:hover,
+  .iphone:hover {
+cursor: pointer;
+  }
+
 .windows-facts {
     width: 280px;
     height: 130px;
@@ -145,18 +158,13 @@ ul li a{
     top: 10px;
     left: 90px;
     border-radius: 10px;
+    padding: 20px;
     display: none;
+    color: aliceblue;
+    font-family: 'Genos', sans-serif;
+    font-size: 20px;
   }
   
-  .windows:hover,
-  .github:hover,
-  .vscode:hover {
-    cursor: pointer;
-  }
-  
-  .windows:hover .windows-facts {
-    display: block;
-  }
   .vscode-facts{
     width: 280px;
     height: 130px;
@@ -166,14 +174,35 @@ ul li a{
     left: 90px;
     border-radius: 10px;
     display: none;
+    color: aliceblue;
+    font-family: 'Genos', sans-serif;
+    font-size: 20px;
+    padding: 20px;
   }
   .github-facts{
     width: 280px;
-    height: 130px;
-    background-color: #CB6CE6;
+    height: 80px;
+    background-color: #3C6BCA;
     position: absolute;
     top: 10px;
     right: 90px;
     border-radius: 10px;
     display: none;
+    color: aliceblue;
+    font-family: 'Genos', sans-serif;
+    font-size: 20px;
+  }
+  .apple-facts{
+    width: 280px;
+    height: 140px;
+    background-color: #CB6CE6;
+    position: absolute;
+    bottom: -70px;
+    right: 90px;
+    border-radius: 10px;
+    display: none;
+    color: aliceblue;
+    font-family: 'Genos', sans-serif;
+    font-size: 20px;
+    padding: 20px;
   }
