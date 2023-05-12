@@ -247,6 +247,7 @@ cursor: pointer;
     margin-top: 10px;
     width: 85%;
     height: 380px;
+    color: white;
     background-color: #171418;
     transform: translateZ(60px);    
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3), 0px 5px 20px #CB6CE6;;
@@ -264,10 +265,13 @@ cursor: pointer;
 .content ul li{
     margin-left: -18px;
     margin-right: 84px;
+    margin-top: -30px;
+    color: #CB6CE6;
 }
 .content i{
     font-size: 18px;
     position: relative;
+    color: #CB6CE6;
 }
 #laptop-page1::after{
     content: '1';
@@ -293,6 +297,12 @@ cursor: pointer;
 #laptop-page1,#laptop-page2,#laptop-page3:hover{
     cursor: pointer;
 }
+#laptop-page1,#laptop-page2,#laptop-page3{
+   
+}
 .skills-page2,.skills-page3{
     display: none;
+}
+#planguages{
+    font-size: 19px;
 }
