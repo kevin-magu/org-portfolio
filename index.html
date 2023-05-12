@@ -50,9 +50,26 @@
           Dominate the Tech World!</div>
       </div>
   </div>
+  <img class="title-image" src="images/aboutme-pic.png" alt="">
+  <section id="aboutme">
+  <div class="brief-introduction card">
+    <div class="card-title">Professional Experience</div>
+    <div class="card-content"><div class="content"></div></div>
+  </div>
+  <div class="professional-experience card">
+    <div class="card-title">Education </div>
+    <div class="card-content"><div class="content"></div></div>
+  </div>
+  <div class="skills card">
+    <div class="card-title">Professional Experience</div>
+    <div class="card-content"><div class="content"></div></div>
+  </div>
 
-  
-<script src="app.js"></script>   
+  </section>
+
+
+
+  <script src="app.js"></script>   
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
 <script type="text/javascript">
 	VanillaTilt.init(document.querySelector(".hero-section"), {
@@ -60,6 +77,13 @@
 		speed: 400,
     glare: true,
     "max-glare":0.5 
+	});
+  VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 7,
+		speed: 800,
+    glare: true,
+    "max-glare":0.5,
+    scale: 1.08
 	});
 
 </script>

@@ -206,3 +206,49 @@ cursor: pointer;
     font-size: 20px;
     padding: 20px;
   }
+  .title-image{
+    transform: scale(.6);
+    margin-left: 40px;
+  }
+#aboutme{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+  .card{
+    width: 25%;
+    height: 450px;
+    background-color: #D9E5F8;
+    margin-right: 20px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    font-family: 'Genos', sans-serif;
+    font-size: 20px;
+    padding: 3px;
+    transform-style: preserve-3d;
+    transform: perspective(300px);
+  }
+  .card-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    color: #CB6CE6;
+    font-weight: bold;
+}
+.card-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.content{
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 85%;
+    height: 380px;
+    background-color: #171418;
+    transform: translateZ(60px);    
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3), 0px 5px 20px #CB6CE6;;
+  
+}
