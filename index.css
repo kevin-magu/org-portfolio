@@ -252,3 +252,47 @@ cursor: pointer;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3), 0px 5px 20px #CB6CE6;;
   
 }
+.content p{
+    color: white;
+    margin: 10px;
+    text-align: center;
+    font-size: 28px;
+}
+.content ul{
+    position: relative;
+}
+.content ul li{
+    margin-left: -18px;
+    margin-right: 84px;
+}
+.content i{
+    font-size: 18px;
+    position: relative;
+}
+#laptop-page1::after{
+    content: '1';
+    font-size: 8px;
+    position: absolute;
+    margin-left: -13px;
+    margin-top: 5px;
+}
+#laptop-page2::after{
+    content: '2';
+    font-size: 8px;
+    position: absolute;
+    margin-left: -13px;
+    margin-top: 5px;
+}
+#laptop-page3::after{
+    content: '3';
+    font-size: 8px;
+    position: absolute;
+    margin-left: -13px;
+    margin-top: 5px;
+}
+#laptop-page1,#laptop-page2,#laptop-page3:hover{
+    cursor: pointer;
+}
+.skills-page2,.skills-page3{
+    display: none;
+}
