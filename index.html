@@ -18,9 +18,12 @@
             <li><a href=""><i id="aboutme-icon" class="fa-solid fa-address-card"></i></a></li>
             <li><a href=""><i id="designsamples-icon" class="fa-solid fa-laptop-code"></i></a></li>
             <li><a href=""><i id="pricing-icon" class="fa-solid fa-comments-dollar"></i></a></li>
+            <li><a href=""><i id="resources" class="fa-solid fa-book-open-reader"></i></a></li>
             <li><a href=""><i id="contacts-icon" class="fa-solid fa-phone-volume"></i></a></li>
-        </ul>
+            
+          </ul>
     </nav>
+
     <img class="soen" src="images/soen.png" alt="">
     <i id="back-to-top" class="fa-solid fa-jet-fighter-up" title="back to top"></i>
     <div class="container">
@@ -31,12 +34,18 @@
         Take a look around to see 
         some of my latest projects and learn how I can help 
         bring your vision to life.</p>
-        <img class="iphone" src="images/iphone.png" alt="">
-        <img class="github" src="images/github.png" alt="">
-        <img class="vscode" src="images/vscode.png" alt="">
-        <img class="windows" src="images/windows.png" alt="">
+        <img class="iphone" src="images/iphone.png" alt="" onclick="dAppleFacts()">
+        <img class="github" src="images/github.png" alt="" onclick="dGithubFacts()">
+        <img class="vscode" src="images/vscode.png" alt="" onclick="dVscodeFacts()">
+        <img class="windows" src="images/windows.png" alt="" onclick="dWindowsFacts()">
         <img class="android" src="images/android.png" alt="">
         <img class="kevinimage" src="images/kevoh.png" alt="">
+        <div class="windows-facts"></div>
+        <div class="vscode-facts"></div>
+        <div class="github-facts"></div>
+      </div>
   </div>
-    </div>
+
+<script src="app.js"></script>    
+</body>  
 </html>
