@@ -3,6 +3,9 @@
     padding: 0px;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: #27282b;
 }
@@ -306,3 +309,7 @@ cursor: pointer;
 #planguages{
     font-size: 19px;
 }
+#language-icons img{
+    width: 40px;
+}
+
