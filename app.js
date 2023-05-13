@@ -59,9 +59,9 @@ var isDeleting = false;
 
 function type() {
   var currentText = text.substring(0, index);
-  document.querySelector(".education-card").innerHTML = currentText;
+  document.querySelector("#progres-text").innerHTML = currentText;
     let content = document.querySelector(".education-card");
-    content.style.color='black';
+
     
   if (!isDeleting) {
     index++;
@@ -77,7 +77,6 @@ function type() {
     }
   }
 
-  setTimeout(type, 40);
+  setTimeout(type, 65);
 }
-
 type();

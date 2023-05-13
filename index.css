@@ -1,109 +1,134 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     background: #27282b;
 }
-.hero-section{
+
+.hero-section {
     position: relative;
     width: 86%;
     height: 700px;
     margin-top: 60px;
-    background: #E0EAFC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #E0EAFC;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-radius: 10px;
     display: flex;
     transform-style: preserve-3d;
     transform: perspective(1000px);
 }
-.container{
+
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: -80px;
     margin-bottom: 100px;
 }
-.welcome-message{
-    width: 40%;margin: 30px;
+
+.welcome-message {
+    width: 40%;
+    margin: 30px;
     font-family: 'Genos', sans-serif;
     font-size: 38px;
     margin-top: 140px;
     margin-left: 80px;
-    
+
 }
-.android,.iphone,.windows.github.kevinimage,.welcome-message{
+
+.android,
+.iphone,
+.windows.github.kevinimage,
+.welcome-message {
     transform: translateZ(40px);
 }
-.hero-section .kevinimage{
+
+.hero-section .kevinimage {
     margin-top: -50px;
     transform: scale(.7);
     position: absolute;
     right: -56px;
 }
-.hero-section .android{
+
+.hero-section .android {
     transform: scale(.5);
     position: absolute;
     left: 46%;
     bottom: -189px;
 }
-.hero-section .windows{
+
+.hero-section .windows {
     transform: scale(.2);
     position: absolute;
     left: -80px;
     top: -60px;
 }
-.hero-section .vscode{
+
+.hero-section .vscode {
     transform: scale(.15);
     position: absolute;
     left: -137px;
     bottom: -120px;
 }
-.hero-section .github{
+
+.hero-section .github {
     transform: scale(.16);
     position: absolute;
     right: -130px;
     top: -120px;
 }
-.hero-section .iphone{
+
+.hero-section .iphone {
     transform: scale(.1);
     position: absolute;
     right: -190px;
     bottom: -214px;
 }
-.soen{
+
+.soen {
     transform: scale(.6);
     position: absolute;
     left: 0px;
     top: 50px;
-    
+
 }
-#back-to-top{
+
+#back-to-top {
     transform: scale(3);
     position: absolute;
     right: 60px;
     bottom: 60px;
     color: #E0EAFC;
 }
-.canvanav{
+
+.canvanav {
     transform: scale(.7);
     margin-left: 130px;
 }
-nav{
+
+nav {
     position: relative;
 }
-ul{
+
+ul {
     position: absolute;
     display: flex;
     left: 29%;
     top: 40px;
 }
-ul li{
+
+ul li {
     list-style: none;
     width: 20px;
     color: #CB6CE6;
@@ -113,45 +138,51 @@ ul li{
     width: auto;
 }
 
-ul li a{
+ul li a {
     color: #CB6CE6;
 }
-#aboutme-icon::after{
+
+#aboutme-icon::after {
     content: 'About Me';
     font-size: 10px;
     font-family: 'Genos', sans-serif;
     margin-left: 1px;
 }
-#designsamples-icon::after{
+
+#designsamples-icon::after {
     content: 'Design Work';
     font-size: 10px;
     font-family: 'Genos', sans-serif;
     margin-left: 1px;
 }
-#pricing-icon::after{
+
+#pricing-icon::after {
     content: 'Pricing';
     font-size: 10px;
     font-family: 'Genos', sans-serif;
     margin-left: 1px;
 }
-#contacts-icon::after{
+
+#contacts-icon::after {
     content: 'Contact Me';
     font-size: 10px;
     font-family: 'Genos', sans-serif;
     margin-left: 1px;
 }
-#resources::after{
+
+#resources::after {
     content: '  Resources';
     font-size: 10px;
     font-family: 'Genos', sans-serif;
     margin-left: 1px;
 }
+
 .windows:hover,
-  .github:hover,
-  .vscode:hover,
-  .iphone:hover {
-cursor: pointer;
-  }
+.github:hover,
+.vscode:hover,
+.iphone:hover {
+    cursor: pointer;
+}
 
 .windows-facts {
     width: 280px;
@@ -166,9 +197,9 @@ cursor: pointer;
     color: aliceblue;
     font-family: 'Genos', sans-serif;
     font-size: 20px;
-  }
-  
-  .vscode-facts{
+}
+
+.vscode-facts {
     width: 280px;
     height: 130px;
     background-color: #CB6CE6;
@@ -181,8 +212,9 @@ cursor: pointer;
     font-family: 'Genos', sans-serif;
     font-size: 20px;
     padding: 20px;
-  }
-  .github-facts{
+}
+
+.github-facts {
     width: 280px;
     height: 80px;
     background-color: #3C6BCA;
@@ -194,8 +226,9 @@ cursor: pointer;
     color: aliceblue;
     font-family: 'Genos', sans-serif;
     font-size: 20px;
-  }
-  .apple-facts{
+}
+
+.apple-facts {
     width: 280px;
     height: 140px;
     background-color: #CB6CE6;
@@ -208,17 +241,20 @@ cursor: pointer;
     font-family: 'Genos', sans-serif;
     font-size: 20px;
     padding: 20px;
-  }
-  .title-image{
+}
+
+.title-image {
     transform: scale(.6);
     margin-left: 40px;
-  }
-#aboutme{
+}
+
+#aboutme {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
 }
-  .card{
+
+.card {
     width: 25%;
     height: 450px;
     background-color: #D9E5F8;
@@ -230,95 +266,181 @@ cursor: pointer;
     padding: 3px;
     transform-style: preserve-3d;
     transform: perspective(300px);
-  }
-  .card-title{
+    z-index: 1;
+}
+
+.card-title {
     width: 100%;
     display: flex;
     justify-content: center;
     font-size: 25px;
     color: #CB6CE6;
     font-weight: bold;
+
 }
-.card-content{
+
+.card-content {
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
-.content{
+
+.content {
     border-radius: 5px;
     margin-top: 10px;
     width: 85%;
     height: 380px;
     color: white;
     background-color: #171418;
-    transform: translateZ(60px);    
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3), 0px 5px 20px #CB6CE6;;
-  
+    transform: translateZ(60px);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3), 0px 5px 20px #CB6CE6;
+    ;
+
 }
-.content p{
+
+.content p {
     color: white;
     margin: 10px;
     text-align: center;
     font-size: 28px;
 }
-.content ul{
+
+.content ul {
     position: relative;
 }
-.content ul li{
+
+.content ul li {
     margin-left: -18px;
     margin-right: 84px;
     margin-top: -30px;
     color: #CB6CE6;
 }
-.content i{
+
+.content i {
     font-size: 18px;
     position: relative;
     color: #CB6CE6;
 }
-#laptop-page1::after{
+
+#laptop-page1::after {
     content: '1';
     font-size: 8px;
     position: absolute;
     margin-left: -13px;
     margin-top: 5px;
 }
-#laptop-page2::after{
+
+#laptop-page2::after {
     content: '2';
     font-size: 8px;
     position: absolute;
     margin-left: -13px;
     margin-top: 5px;
 }
-#laptop-page3::after{
+
+#laptop-page3::after {
     content: '3';
     font-size: 8px;
     position: absolute;
     margin-left: -13px;
     margin-top: 5px;
 }
-#laptop-page1,#laptop-page2,#laptop-page3:hover{
+
+#laptop-page1,
+#laptop-page2,
+#laptop-page3:hover {
     cursor: pointer;
 }
-#laptop-page1,#laptop-page2,#laptop-page3{
-   
-}
-.skills-page2,.skills-page3{
+
+.skills-page2,
+.skills-page3 {
     display: none;
 }
-#planguages{
+
+#planguages {
     font-size: 19px;
 }
-#language-icons img{
+
+#language-icons img {
     width: 40px;
 }
-.education-card{
+
+.education-card {
     background: url(images/degree2.png);
     background-position: center;
     background-size: cover;
     filter: blur(px);
     font-size: 30px;
     text-align: center;
-    padding: 3px;
+    padding: 7px;
+    color: #CB6CE6;
+    font-weight: bold;
+    position: relative;
 }
 
+.education-card i {
+    color: #CB6CE6;
+}
+
+#progress-text {
+    color: #CB6CE6;
+    margin-top: 60px;
+}
+
+#badge {
+    position: absolute;
+    bottom: -80px;
+    transform: scale(.36);
+    margin-left: -80px;
+}
+
+#badge:hover {
+    cursor: pointer;
+}
+
+.certificates {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    margin-top: -300px;
+    z-index: 100;
+    margin-left: -200px;
+}
+
+#cancel-icon {
+    position: absolute;
+    font-size: 35px;
+    right: 4px;
+    top: 0;
+}
+
+#cancel-icon:hover {
+    cursor: pointer;
+
+}
+
+.php-cert {
+    background: url(images/php-cert.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.pagenumber {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.rectangle {
+    width: 14px;
+    height: 14px;
+    outline: green solid 1px;
+    margin-right: 20px;
+}
+
+.rectangle:hover {
+    cursor: pointer;
+}
