@@ -52,3 +52,32 @@ function dpage3(){
     skillsPage1.style.display='none';
     skillsPage3.style.display='block';
 }
+
+var text = "Currently pursuing a degree in software engineering";
+var index = 0;
+var isDeleting = false;
+
+function type() {
+  var currentText = text.substring(0, index);
+  document.querySelector(".education-card").innerHTML = currentText;
+    let content = document.querySelector(".education-card");
+    content.style.color='black';
+    
+  if (!isDeleting) {
+    index++;
+
+    if (index > text.length) {
+      isDeleting = true;
+    }
+  } else {
+    index--;
+
+    if (index === 0) {
+      isDeleting = false;
+    }
+  }
+
+  setTimeout(type, 40);
+}
+
+type();

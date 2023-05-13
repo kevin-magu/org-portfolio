@@ -312,4 +312,13 @@ cursor: pointer;
 #language-icons img{
     width: 40px;
 }
+.education-card{
+    background: url(images/degree2.png);
+    background-position: center;
+    background-size: cover;
+    filter: blur(px);
+    font-size: 30px;
+    text-align: center;
+    padding: 3px;
+}
 
