@@ -52,7 +52,7 @@
         Dominate the Tech World!</div>
     </div>
   </div>
-  <img class="title-image" src="images/aboutme-pic.png" alt="">
+  <img class="title-image" src="images/aboutme-pic.png" alt="" onclick="stopTilt()">
   <section id="aboutme">
     <div class="brief-introduction card">
       <div class="card-title">Professional Experience</div>
@@ -121,26 +121,59 @@
 
       </div>
     </div>
-    <div class="professional-experience card">
+    <div class="education card">
       <div class="card-title">Education </div>
       <div class="card-content">
         <div class="content  education-card">
           <p id="progress-text">Currently pursuing a degree in software engineering</p>
-          <img id="badge" src="images/badge.png" alt="" onclick="dCerts">
+          <img id="badge" src="images/badge.png" alt="" onclick="checkCertOpen()">
 
-          <div class="certificates php-cert">
-            <i id="cancel-icon" class="fa-solid fa-xmark"></i>
+          <div class="certificates">
+            <div class="php-cert">
+            <i id="cancel-icon" class="fa-solid fa-xmark" onclick="hideCerts()"></i>
             <div class="pagenumber">
-            <div class="rectangle page1"></div>
-            <div class="rectangle page2"></div>
-            <div class="rectangle page3"></div>
-            <div class="rectangle page3"></div>
+            <div class="rectangle page1" onclick="certPage1()"></div>
+            <div class="rectangle page2" onclick="certPage2()"></div>
+            <div class="rectangle page3" onclick="certPage3()"></div>
+            <div class="rectangle page3" onclick="certPage4()"></div>
+          </div>
+        </div>
+
+          <div class="web-fundamentals-cert">
+            <i id="cancel-icon" class="fa-solid fa-xmark" onclick="hideCerts()"></i>
+            <div class="pagenumber">
+            <div class="rectangle rect1" onclick="certPage1()"></div>
+            <div class="rectangle rect2" onclick="certPage2()"></div>
+            <div class="rectangle rect3" onclick="certPage3()"></div>
+            <div class="rectangle rect3" onclick="certPage4()"></div>
+          </div>
+          </div>
+
+          <div class="sql-cert">
+            <i id="cancel-icon" class="fa-solid fa-xmark" onclick="hideCerts()"></i>
+            <div class="pagenumber">
+            <div class="rectangle page1" onclick="certPage1()"></div>
+            <div class="rectangle page2" onclick="certPage2()"></div>
+            <div class="rectangle page3" onclick="certPage3()"></div>
+            <div class="rectangle page3" onclick="certPage4()"></div>
+          </div>
+          </div>
+
+          <div class="html-cert">
+            <i id="cancel-icon" class="fa-solid fa-xmark" onclick="hideCerts()"></i>
+            <div class="pagenumber">
+            <div class="rectangle page1" onclick="certPage1()"></div>
+            <div class="rectangle page2" onclick="certPage2()"></div>
+            <div class="rectangle page3" onclick="certPage3()"></div>
+            <div class="rectangle page3" onclick="certPage4()"></div>
           </div>
           </div>
         </div>
+
+        </div>
       </div>
     </div>
-    <div class="skills card">
+    <div class="skills card" onclick="stopTilt()">
       <div class="card-title">Professional Experience</div>
       <div class="card-content">
         <div class="content">
@@ -163,14 +196,30 @@
       "max-glare": 0.5
     });
     VanillaTilt.init(document.querySelectorAll(".card"), {
-      max: 7,
+      max: 3,
+      speed: 800,
+      glare: true,
+      "max-glare": 0.5,
+      scale: 1.08
+    });
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+      max: 3,
       speed: 800,
       glare: true,
       "max-glare": 0.5,
       scale: 1.08
     });
 
-  </script>
+      VanillaTilt.init(document.querySelectorAll(".certificates"), {
+      max: 0.0001,
+      speed: 1000,
+      glare: false,
+      "max-glare": 0.1,
+    });
+    
+ 
+
+</script>
 </body>
 
 </html>

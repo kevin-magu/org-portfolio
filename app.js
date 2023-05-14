@@ -9,6 +9,17 @@ let skillsPage1 = document.querySelector('.skills-page1');
 let skillsPage2 = document.querySelector('.skills-page2');
 let skillsPage3 = document.querySelector('.skills-page3');
 
+let certDiv = document.querySelector('.certificates');
+let phpCert = document.querySelector('.php-cert');
+let webFundamentalsCert = document.querySelector('.web-fundamentals-cert');
+let sqlCert = document.querySelector('.sql-cert');
+let htmlCert = document.querySelector('.html-cert');
+
+let rect1 = document.querySelector('.rect1');
+let rect2 = document.querySelector('.rect2');
+let rect3 = document.querySelector('.rect3');
+let rect4 = document.querySelector('.rect4');
+
 function dWindowsFacts() {
     windowsFacts.style.display = 'block';
     setTimeout(function(){
@@ -80,3 +91,65 @@ function type() {
   setTimeout(type, 65);
 }
 type();
+
+
+function hideCerts(){
+  certDiv.style.display='none';
+}
+let isCertOpen = true
+function checkCertOpen(){
+isCertOpen = true;
+  if (isCertOpen=true) {
+    function showData(){
+      phpCert.style.display='block';
+      webFundamentalsCert.style.display='none';
+      sqlCert.style.display='none';
+      htmlCert.style.display='none';
+    }
+    showData();
+  }
+  else{
+    console.log("hello sir");
+}
+}
+
+function certPage1() {
+  phpCert.style.display='block';
+  webFundamentalsCert.style.display='none';
+  sqlCert.style.display='none';
+  htmlCert.style.display='none';
+}
+
+
+function certPage2(){
+  phpCert.style.display='none';
+  webFundamentalsCert.style.display='block';
+  sqlCert.style.display='none';
+  htmlCert.style.display='none';
+  rect1.style.backgroundColor='#F9FCFE';
+  rect2.style.backgroundColor='#CB6CE6';
+  rect3.style.backgroundColor='#F9FCFE';
+  rect4.style.backgroundColor='#F9FCFE';
+}
+
+function certPage3(){
+  phpCert.style.display='none';
+  webFundamentalsCert.style.display='none';
+  sqlCert.style.display='block';
+  htmlCert.style.display='none';
+  rect1.style.backgroundColor='#F9FCFE';
+  rect2.style.backgroundColor='#F9FCFE';
+  rect3.style.backgroundColor='#CB6CE6';
+  rect4.style.backgroundColor='#F9FCFE';
+}
+
+function certPage4(){
+  phpCert.style.display='none';
+  webFundamentalsCert.style.display='none';
+  sqlCert.style.display='none';
+  htmlCert.style.display='block';
+  rect1.style.backgroundColor='#F9FCFE';
+  rect2.style.backgroundColor='#F9FCFE';
+  rect3.style.backgroundColor='#F9FCFE';
+  rect4.style.backgroundColor='#CB6CE6';
+}
