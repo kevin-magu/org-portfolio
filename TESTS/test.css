@@ -1,5 +1,9 @@
-.card{
-  width: 300px;
-  height: 300px;
-  background-color: aquamarine;
+#contentDiv {
+  display: none;
+}
+
+#openDiv {
+  cursor: pointer;
+  border: 1px solid black;
+  padding: 10px;
 }

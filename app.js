@@ -14,6 +14,7 @@ let phpCert = document.querySelector('.php-cert');
 let webFundamentalsCert = document.querySelector('.web-fundamentals-cert');
 let sqlCert = document.querySelector('.sql-cert');
 let htmlCert = document.querySelector('.html-cert');
+let certIcon = document.getElementById('badge');
 
 let rect1 = document.querySelector('.rect1');
 let rect2 = document.querySelector('.rect2');
@@ -92,25 +93,10 @@ function type() {
 }
 type();
 
+let isCertOpen = false;
 
 function hideCerts(){
-  certDiv.style.display='none';
-}
-let isCertOpen = true
-function checkCertOpen(){
-isCertOpen = true;
-  if (isCertOpen=true) {
-    function showData(){
-      phpCert.style.display='block';
-      webFundamentalsCert.style.display='none';
-      sqlCert.style.display='none';
-      htmlCert.style.display='none';
-    }
-    showData();
-  }
-  else{
-    console.log("hello sir");
-}
+  phpCert.style.display='none';
 }
 
 function certPage1() {
@@ -118,8 +104,18 @@ function certPage1() {
   webFundamentalsCert.style.display='none';
   sqlCert.style.display='none';
   htmlCert.style.display='none';
+  certIcon.style.display='none';
 }
 
+for (let i = 0; i < array.length; i++) {
+  const element = array[i];
+  
+}
+
+function handleCancelCerts() {
+  hideCerts();
+  certIcon.style.display='flex';
+}
 
 function certPage2(){
   phpCert.style.display='none';
