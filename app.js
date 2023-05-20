@@ -93,10 +93,12 @@ function type() {
 }
 type();
 
-let isCertOpen = false;
-
 function hideCerts(){
   phpCert.style.display='none';
+  webFundamentalsCert.style.display='none';
+  sqlCert.style.display='none';
+  htmlCert.style.display='none';
+
 }
 
 function certPage1() {
@@ -104,12 +106,6 @@ function certPage1() {
   webFundamentalsCert.style.display='none';
   sqlCert.style.display='none';
   htmlCert.style.display='none';
-  certIcon.style.display='none';
-}
-
-for (let i = 0; i < array.length; i++) {
-  const element = array[i];
-  
 }
 
 function handleCancelCerts() {
@@ -122,10 +118,6 @@ function certPage2(){
   webFundamentalsCert.style.display='block';
   sqlCert.style.display='none';
   htmlCert.style.display='none';
-  rect1.style.backgroundColor='#F9FCFE';
-  rect2.style.backgroundColor='#CB6CE6';
-  rect3.style.backgroundColor='#F9FCFE';
-  rect4.style.backgroundColor='#F9FCFE';
 }
 
 function certPage3(){
@@ -135,7 +127,7 @@ function certPage3(){
   htmlCert.style.display='none';
   rect1.style.backgroundColor='#F9FCFE';
   rect2.style.backgroundColor='#F9FCFE';
-  rect3.style.backgroundColor='#CB6CE6';
+  rect3.style.backgroundColor='blue';
   rect4.style.backgroundColor='#F9FCFE';
 }
 
@@ -149,3 +141,55 @@ function certPage4(){
   rect3.style.backgroundColor='#F9FCFE';
   rect4.style.backgroundColor='#CB6CE6';
 }
+
+//handling sliders on the projects section
+window.addEventListener('DOMContentLoaded', function () {
+  const sliderImages = document.querySelectorAll('.slider-image');
+  const thumbnails = document.querySelectorAll('.thumbnail');
+
+  let currentImage = 0;
+
+  function showImage(index) {
+    sliderImages.forEach(function (image, i) {
+      if (i === index) {
+        image.classList.add('active');
+      } else {
+        image.classList.remove('active');
+      }
+    });
+
+    thumbnails.forEach(function (thumbnail, i) {
+      if (i === index) {
+        thumbnail.classList.add('active');
+      } else {
+        thumbnail.classList.remove('active');
+      }
+    });
+  }
+
+  function nextImage() {
+    currentImage++;
+    if (currentImage >= sliderImages.length) {
+      currentImage = 0;
+    }
+    showImage(currentImage);
+  }
+
+  function thumbnailClickHandler(index) {
+    currentImage = index;
+    showImage(currentImage);
+  }
+
+  // Set up automatic image sliding
+  setInterval(nextImage, 5000);
+
+  // Set up thumbnail click event listeners
+  thumbnails.forEach(function (thumbnail, i) {
+    thumbnail.addEventListener('click', function () {
+      thumbnailClickHandler(i);
+    });
+  });
+
+  // Show the first image initially
+  showImage(currentImage);
+});
