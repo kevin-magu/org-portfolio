@@ -142,5 +142,13 @@ function certPage4(){
   rect4.style.backgroundColor='#CB6CE6';
 }
 
-//handling sliders on the projects section
+//handling sliders on the web dev  section
+let ecommerceWeb = document.querySelector('.ecommerce-terminal');
+let portfolioWeb = document.querySelector('.portfolio-terminal');
+let bookingInfo = document.querySelector('.booking-terminal');
+let realestateInfo = document.querySelector('.realestate-terminal');
+let travelInfo = document.querySelector('.travel-terminal');
 
+function openPortfolio(){
+  portfolioWeb.style.display='block';
+}
