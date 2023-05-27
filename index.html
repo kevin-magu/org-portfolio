@@ -18,7 +18,7 @@
     <img class="canvanav" src="images/canvanav.png" alt="">
     <ul>
       <li><a href="#aboutme"><i id="aboutme-icon" class="fa-solid fa-address-card"></i></a></li>
-      <li><a href=""><i id="designsamples-icon" class="fa-solid fa-laptop-code"></i></a></li>
+      <li><a href="#projects-section"><i id="designsamples-icon" class="fa-solid fa-laptop-code"></i></a></li>
       <li><a href=""><i id="pricing-icon" class="fa-solid fa-comments-dollar"></i></a></li>
       <li><a href=""><i id="resources" class="fa-solid fa-book-open-reader"></i></a></li>
       <li><a href=""><i id="contacts-icon" class="fa-solid fa-phone-volume"></i></a></li>
@@ -196,7 +196,6 @@
   <div class="slider">
     <div class="slider-image">
       <img src="images/ecommerceconcept.png" alt="Image 1">
-      ECOMMERCE
     </div>
     <div class="slider-image">
       <img src="images/portfolio-website-example.png" alt="Image 2">
@@ -238,7 +237,6 @@
   </div>
 
   <div class="project-list-card">
-    
     <div class="circle"></div>
     <div class="circle"></div>
     <div class="project-list-card-inner">
@@ -255,13 +253,112 @@
     </div>
 </div>
 
- </section>
+<img id="graphic-d-section-pic" src="images/graphic-design-section.png" alt="">
+  <div id="graphic-design-section">
+    <div class="sliding-web-projects2">
+    <div class="slider2">
+      <div class="slider-image2">
+        <img src="images/graphics-services.png" alt="Image 1">
+      </div>
+      <div class="slider-image2">
+        <img src="images/Logo-design-sample.png" alt="Image 2">
+      </div>
+      <div class="slider-image2">
+        <img src="images/flyer-design-sample.png" alt="Image 3">
+      </div>
+      <div class="slider-image2">
+        <img src="images/UIUX-sample.png" alt="Image 3">
+      </div>
+      <div class="slider-image2">
+        <img src="images/company-profile-sample.png" alt="Image 3">
+      </div>
+      <div class="slider-image2">
+        <img src="images/birthday-card-sample.png" alt="Image 3">
+      </div>
+    </div>
+    
+    <div class="thumbnail-container2">
+      <div class="thumbnail2">
+        <img src="images/graphics-services.png"  alt="Image 1">
+      </div>
+      <div class="thumbnail2">
+        <img src="images/Logo-design-sample.png" alt="Image 2">
+      </div>
+      <div class="thumbnail2">
+        <img src="images/flyer-design-sample.png"alt="Image 3">
+      </div>
+      <div class="thumbnail2">
+        <img src="images/UIUX-sample.png"alt="Image 3">
+      </div>
+      <div class="thumbnail2">
+        <img src="images/company-profile-sample.png"alt="Image 3">
+      </div>
+      <div class="thumbnail2">
+        <img src="images/birthday-card-sample.png"alt="Image 3">
+      </div>
+    </div>
+    </div>
+  </div>
+  </div>
 
+</section>
   <script src="app.js"></script>
   <script>
     window.addEventListener('DOMContentLoaded', function () {
   const sliderImages = document.querySelectorAll('.slider-image');
   const thumbnails = document.querySelectorAll('.thumbnail');
+
+  let currentImage = 0;
+
+  function showImage(index) {
+    sliderImages.forEach(function (image, i) {
+      if (i === index) {
+        image.classList.add('active');
+      } else {
+        image.classList.remove('active');
+      }
+    });
+
+    thumbnails.forEach(function (thumbnail, i) {
+      if (i === index) {
+        thumbnail.classList.add('active');
+      } else {
+        thumbnail.classList.remove('active');
+      }
+    });
+  }
+
+  function nextImage() {
+    currentImage++;
+    if (currentImage >= sliderImages.length) {
+      currentImage = 0;
+    }
+    showImage(currentImage);
+  }
+
+  function thumbnailClickHandler(index) {
+    currentImage = index;
+    showImage(currentImage);
+  }
+
+  // Set up automatic image sliding
+  setInterval(nextImage, 5000);
+
+  // Set up thumbnail click event listeners
+  thumbnails.forEach(function (thumbnail, i) {
+    thumbnail.addEventListener('click', function () {
+      thumbnailClickHandler(i);
+    });
+  });
+
+  // Show the first image initially
+  showImage(currentImage);
+});
+  </script>
+  <script>
+  window.addEventListener('DOMContentLoaded', function () {
+  const sliderImages = document.querySelectorAll('.slider-image2');
+  const thumbnails = document.querySelectorAll('.thumbnail2');
 
   let currentImage = 0;
 
