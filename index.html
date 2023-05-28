@@ -194,10 +194,9 @@
   <section class="webinfo">
     <div class="terminal-container portfolio-terminal">
       <div class="container_terminal"></div>
-
       <div class="terminal_toolbar">
-        <i class="fa-sharp fa-solid fa-xmark cancel-icon"></i>
-          <div class="butt">
+        <i class="fa-sharp fa-solid fa-xmark cancel-icon" onclick="closePortfolio()"></i>
+          <div class="butt">=
               <button class="btn btn-color"></button>
               <button class="btn"></button>
               <button class="btn"></button> <P class="project-title2">Portfolio</P>
@@ -226,7 +225,7 @@
       <div class="container_terminal"></div>
 
       <div class="terminal_toolbar">
-        <i class="fa-sharp fa-solid fa-xmark cancel-icon"></i>
+        <i class="fa-sharp fa-solid fa-xmark cancel-icon" onclick="closeEcommerce()"></i>
           <div class="butt">
               <button class="btn btn-color"></button>
               <button class="btn"></button>
@@ -239,7 +238,7 @@
               <span class="terminal_user">Kevoh@admin:</span>
               <span class="terminal_location">~</span>
               <span class="terminal_bling">$</span>
-               the skills to create remarkable e-commerce websites.
+              <p class="project-info">
                 Although the e-commerce project featured in my portfolio 
                 is currently in the conceptual stage, it serves as evidence
                  of my proficiency in designing dynamic product catalogs, 
@@ -256,6 +255,7 @@
       <div class="container_terminal"></div>
 
       <div class="terminal_toolbar">
+        <i class="fa-sharp fa-solid fa-xmark cancel-icon" onclick="closeBooking()"></i>
         <i class="fa-sharp fa-solid fa-xmark cancel-icon"></i>
           <div class="butt">
               <button class="btn btn-color"></button>
@@ -269,7 +269,7 @@
               <span class="terminal_user">Kevoh@admin:</span>
               <span class="terminal_location">~</span>
               <span class="terminal_bling">$</span>
-              As a proficient web developer, I have the capabilities to create outstanding
+              <p class="project-info"></p>As a proficient web developer, I have the capabilities to create outstanding
                booking websites. While the booking project showcased in my portfolio is 
                currently conceptual, it highlights my expertise in designing intuitive 
                user interfaces, implementing seamless reservation systems, and 
@@ -286,6 +286,8 @@
       <div class="container_terminal"></div>
 
       <div class="terminal_toolbar">
+        <i class="fa-sharp fa-solid fa-xmark cancel-icon" onclick="closeLearning()"></i>
+
         <i class="fa-sharp fa-solid fa-xmark cancel-icon"></i>
           <div class="butt">
               <button class="btn btn-color"></button>
@@ -299,7 +301,7 @@
               <span class="terminal_user">Kevoh@admin:</span>
               <span class="terminal_location">~</span>
               <span class="terminal_bling">$</span>
-              With my extensive experience as a web developer, I am adept at
+              <p class="project-info"></p>With my extensive experience as a web developer, I am adept at
                creating engaging and user-friendly learning websites. Although
                 the learning website project in my portfolio is currently in 
                 the conceptual stage, it reflects my proficiency in designing
@@ -318,6 +320,8 @@
       <div class="container_terminal"></div>
 
       <div class="terminal_toolbar">
+        <i class="fa-sharp fa-solid fa-xmark cancel-icon" onclick="closeRealestate()"></i>
+
         <i class="fa-sharp fa-solid fa-xmark cancel-icon"></i>
           <div class="butt">
               <button class="btn btn-color"></button>
@@ -331,7 +335,7 @@
               <span class="terminal_user">Kevoh@admin:</span>
               <span class="terminal_location">~</span>
               <span class="terminal_bling">$</span>
-              As an accomplished web developer, I possess the 
+              <p class="project-info">As an accomplished web developer, I possess the 
               necessary skills to craft exceptional real estate 
               websites. While the real estate project featured in
                my portfolio is currently in the conceptual phase, 
@@ -344,10 +348,6 @@
                 to find their ideal properties effortlessly, while providing 
                 agents and agencies with an effective platform to showcase
                  their listings and connect with potential buyers or renters.
-
-
-
-
 </p>
           </div>
       </div>
@@ -358,7 +358,7 @@
       <div class="container_terminal"></div>
 
       <div class="terminal_toolbar">
-        <i class="fa-sharp fa-solid fa-xmark cancel-icon"></i>
+        <i class="fa-sharp fa-solid fa-xmark cancel-icon" onclick="closeTravel()"></i>
           <div class="butt">
               <button class="btn btn-color"></button>
               <button class="btn"></button>
@@ -371,7 +371,7 @@
               <span class="terminal_user">Kevoh@admin:</span>
               <span class="terminal_location">~</span>
               <span class="terminal_bling">$</span>
-              With my expertise as a web developer, I am
+              <With class="project-info">With my expertise as a web developer, I am
                well-equipped to create impressive travel
                 booking websites. Although the travel booking
                  project in my portfolio is currently in the 
@@ -393,8 +393,8 @@
   <section id="projects-section">
     <div class="sliding-web-projects">
   <div class="slider">
-    <div class="slider-image">
-      <img class="ecommerce-web"src="images/ecommerceconcept.png" alt="Image 1" onclick="openEcommerce()">
+    <div class="slider-image ecom-div">
+      <img class="ecommerce-web"src="images/ecommerceconcept.png" alt="Image 1">
     </div>
     <div class="slider-image">
       <img class="portfolio-web" src="images/portfolio-website-example.png" alt="Image 2" onclick="openPortfolio()">
@@ -414,28 +414,28 @@
   </div>
   
   <div class="thumbnail-container">
-    <div class="thumbnail">
+    <div class="thumbnail" onclick="openEcommerce()">
       <img src="images/ecommerceconcept.png" alt="Image 1">
     </div>
-    <div class="thumbnail">
+    <div class="thumbnail" onclick="openPortfolio()">
       <img src="images/portfolio-website-example.png" alt="Image 2">
     </div>
-    <div class="thumbnail">
+    <div class="thumbnail" onclick="openBooking()">
       <img src="images/booking-website-concept.png"alt="Image 3">
     </div>
-    <div class="thumbnail">
+    <div class="thumbnail" onclick="openLearning()">
       <img src="images/online-learning-platform.png"alt="Image 3">
     </div>
-    <div class="thumbnail">
+    <div class="thumbnail" onclick="openRealestate()">
       <img src="images/real-estate-concepts.png"alt="Image 3">
     </div>
-    <div class="thumbnail">
+    <div class="thumbnail" onclick="openTravel()">
       <img src="images/travel-concept.png"alt="Image 3">
     </div>
   </div>
   </div>
 
-  <div class="project-list-card">
+  <div class="project-list-card" onclick="openEcommerce()">
     <div class="circle"></div>
     <div class="circle"></div>
     <div class="project-list-card-inner">

@@ -700,13 +700,14 @@ ul li a {
     }
   }
   /*WEBSITES MORE INFO DIVS*/
-  .portfolio-terminal,.ecommerce-terminal,
+  .terminal-container,.portfolio-terminal,.ecommerce-terminal,
   .booking-terminal, .learning-terminal,.realestate-terminal, .travel-terminal {
     width: 450px;
-    height: 550px;
+    height: auto;
     position: absolute;
     right: 100px;
     display: none;
+    padding: 10px;
   }
 .cancel-icon{
     font-size: 35px;
@@ -724,7 +725,7 @@ ul li a {
   }
   .project-info{
     color: #1eff8e;
-    font-size: 25px;
+    font-size: 22px;
   }
   
   .terminal_toolbar {

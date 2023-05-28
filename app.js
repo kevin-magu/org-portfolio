@@ -21,6 +21,16 @@ let rect2 = document.querySelector('.rect2');
 let rect3 = document.querySelector('.rect3');
 let rect4 = document.querySelector('.rect4');
 
+let ecommerceWeb = document.querySelector('.ecommerce-terminal');
+let portfolioWeb = document.querySelector('.portfolio-terminal');
+let bookingInfo = document.querySelector('.booking-terminal');
+let learningInfo =document.querySelector('.learning-terminal');
+let realestateInfo = document.querySelector('.realestate-terminal');
+let travelInfo = document.querySelector('.travel-terminal');
+
+let terminalContainer = document.querySelector('.terminal-container');
+let projectList = document.querySelector('.project-list-card');
+
 function dWindowsFacts() {
     windowsFacts.style.display = 'block';
     setTimeout(function(){
@@ -143,13 +153,85 @@ function certPage4(){
 }
 
 //handling sliders on the web dev  section
-let ecommerceWeb = document.querySelector('.ecommerce-terminal');
-let portfolioWeb = document.querySelector('.portfolio-terminal');
-let bookingInfo = document.querySelector('.booking-terminal');
-let realestateInfo = document.querySelector('.realestate-terminal');
-let travelInfo = document.querySelector('.travel-terminal');
-
 
 function openEcommerce(){
   ecommerceWeb.style.display='block';
+  portfolioWeb.style.display='none';
+  learningInfo.style.display = 'none'
+  bookingInfo.style.display='none';
+  realestateInfo.style.display='none';
+  travelInfo.style.display='none';
+  projectList.style.display = 'none';
+}
+function openPortfolio(){
+  ecommerceWeb.style.display='none';
+  portfolioWeb.style.display='block';
+  bookingInfo.style.display='none';
+  learningInfo.style.display = 'none'
+  realestateInfo.style.display='none';
+  travelInfo.style.display='none';
+  projectList.style.display = 'none';
+}
+
+function openLearning(){
+  ecommerceWeb.style.display='none';
+  portfolioWeb.style.display='none';
+  learningInfo.style.display = 'block'
+  bookingInfo.style.display='none';
+  realestateInfo.style.display='none';
+  travelInfo.style.display='none';
+  projectList.style.display = 'none';
+}
+function openBooking(){
+  ecommerceWeb.style.display='none';
+  portfolioWeb.style.display='none';
+  learningInfo.style.display = 'none'
+  bookingInfo.style.display='block';
+  realestateInfo.style.display='none';
+  travelInfo.style.display='none';
+  projectList.style.display = 'none';
+}
+function openRealestate(){
+  ecommerceWeb.style.display='none';
+  portfolioWeb.style.display='none';
+  learningInfo.style.display = 'none'
+  bookingInfo.style.display='none';
+  realestateInfo.style.display='block';
+  travelInfo.style.display='none';
+  projectList.style.display = 'none';
+}
+function openTravel(){
+  ecommerceWeb.style.display='none';
+  portfolioWeb.style.display='none';
+  bookingInfo.style.display='none';
+  learningInfo.style.display = 'none'
+  realestateInfo.style.display='none';
+  travelInfo.style.display='block';
+  projectList.style.display = 'none';
+}
+
+/*close portfolio*/ 
+function closeEcommerce(){
+  ecommerceWeb.style.display = 'none';
+  projectList.style.display = 'block';
+}
+function closePortfolio(){
+  portfolioWeb.style.display = 'none';
+  projectList.style.display = 'block';
+}
+function closeBooking(){
+  bookingInfo.style.display = 'none';
+  projectList.style.display = 'block';
+}
+function closeLearning(){
+  learningInfo.style.display = 'none';
+  projectList.style.display = 'block';
+}
+function closeRealestate(){
+  realestateInfo.style.display = 'none';
+  projectList.style.display = 'block';
+}
+function closeTravel(){
+  travelInfo.style.display = 'none';
+  projectList.style.display = 'block';
 }
