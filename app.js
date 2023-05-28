@@ -149,6 +149,7 @@ let bookingInfo = document.querySelector('.booking-terminal');
 let realestateInfo = document.querySelector('.realestate-terminal');
 let travelInfo = document.querySelector('.travel-terminal');
 
-function openPortfolio(){
-  portfolioWeb.style.display='block';
+
+function openEcommerce(){
+  ecommerceWeb.style.display='block';
 }

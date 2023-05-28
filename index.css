@@ -700,7 +700,8 @@ ul li a {
     }
   }
   /*WEBSITES MORE INFO DIVS*/
-  .terminal-container {
+  .portfolio-terminal,.ecommerce-terminal,
+  .booking-terminal, .learning-terminal,.realestate-terminal, .travel-terminal {
     width: 450px;
     height: 550px;
     position: absolute;
