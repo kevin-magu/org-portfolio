@@ -11,14 +11,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kevin</title>
-  <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("1wigWwpR3B0D3M1LZ");
-   })();
-</script>
 </head>
 
 <body>
@@ -546,7 +538,7 @@
 <footer>
   <a id="cv" href="">Download CV<i id="cv-icon"class="fa-sharp fa-solid fa-download"></i></a>
 
-  <form id="sendemailform" method="post">
+  <form id="sendemailform">
     <div class="inputs">
     <p>Send Me An Email</p>
     <input type="text" id="name" placeholder="Name" name="name">
@@ -561,11 +553,18 @@
 
 <script>
   function sendMail(){
-  const formID = document.querySelector('#sendemailform');
+  const formID = document.querySelector("#sendemailform");
 const serviceID = "service_58s96xd";
 const templateID = "template_vydlttg";
 
-emailjs.sendForm(serviceID, templateID,formID)
+var templateParams = {
+    name: document.querySelector("#name"),
+    phone: document.querySelector("#phone"),
+    email: document.querySelector("#email"),
+    message: document.querySelector("#message"),
+  };
+ 
+emailjs.send('service_58s96xd', 'template_vydlttg', templateParams)
     .then(function(response) {
        console.log('SUCCESS!', response.status, response.text);
     }, function(error) {
@@ -573,6 +572,16 @@ emailjs.sendForm(serviceID, templateID,formID)
     });
   }
 </script>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("1wigWwpR3B0D3M1LZ");
+   })();
+</script>
+
 <script src="app.js"></script>
   <script>
     window.addEventListener('DOMContentLoaded', function () {
