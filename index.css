@@ -863,18 +863,20 @@ ul li a {
   
   /*curious minds central*/
   .curious-minds-central{
-    width: 270px;
-    margin-left: 200px;
+    transform: scale(.6);
+    margin-left: 40px;
+    margin-bottom: 30px;
   }
 
   .book {
     position: relative;
     border-radius: 10px;
-    width: 220px;
-    height: 300px;
+    width: 30%;
+    height: 400px;
+    margin-right: 20px;
     background-color: whitesmoke;
     -webkit-box-shadow: 1px 1px 12px #000;
-    box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #ffffff;
     -webkit-transform: preserve-3d;
     -ms-transform: preserve-3d;
     transform: preserve-3d;
@@ -916,6 +918,8 @@ ul li a {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+
+    
   }
   
   .book:hover .cover {
@@ -927,8 +931,39 @@ ul li a {
   }
   
   #outer-content{
-    font-size: 20px;
+    font-size: 27px;
     font-weight: bolder;
+    font-family: 'Genos', sans-serif;
+    color: white;
+
   }
+  #learning-explanation{
+    font-family: 'Genos', sans-serif;
+    font-size: 28px;
+    margin-left: 220px;
+    color: white;
+  }
+  .books-section{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .book1{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('images/javascriptlogo2.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  .book2{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/elon-musk.png');
+    background-position: center;
+    background-size: cover;
+  }
+  .book3{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/blogsection-background.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+
   
   
