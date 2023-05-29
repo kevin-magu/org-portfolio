@@ -1,0 +1,11 @@
+body{
+    background-color: #D9E5F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thanks{
+    width: 400px;
+    height: 400px;
+    border-radius: 8px;
+}
