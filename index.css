@@ -964,6 +964,18 @@ ul li a {
     background-position: center;
     background-size: cover;
   }
+  footer{
+    height: 300px;
+    max-width: 100%;
+    background: rgb(56,54,55);
+background: linear-gradient(90deg, rgba(56,54,55,1) 
+  0%, rgba(56,54,55,1) 35%, rgba(123,53,63,1) 100%);
+    margin-top: 30px;
+  }
+
+  #cv{
+    
+  }
 
   
   
