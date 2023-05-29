@@ -31,6 +31,7 @@ let travelInfo = document.querySelector('.travel-terminal');
 let terminalContainer = document.querySelector('.terminal-container');
 let projectList = document.querySelector('.project-list-card');
 
+const formID = document.querySelector('#sendemailform');
 function dWindowsFacts() {
     windowsFacts.style.display = 'block';
     setTimeout(function(){
@@ -235,3 +236,4 @@ function closeTravel(){
   travelInfo.style.display = 'none';
   projectList.style.display = 'block';
 }
+

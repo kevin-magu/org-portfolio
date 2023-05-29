@@ -11,6 +11,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kevin</title>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("1wigWwpR3B0D3M1LZ");
+   })();
+</script>
 </head>
 
 <body>
@@ -538,33 +546,31 @@
 <footer>
   <a id="cv" href="">Download CV<i id="cv-icon"class="fa-sharp fa-solid fa-download"></i></a>
 
-  <form onsubmit="sendEmail(); reset(); return false;">
+  <form id="sendemailform" method="post">
     <div class="inputs">
     <p>Send Me An Email</p>
-    <input type="text" id="name" placeholder="Name">
-    <input type="number" name="" id="phone" placeholder="Phone">
-    <input type="email" id="email" placeholder="Email">
+    <input type="text" id="name" placeholder="Name" name="name">
+    <input type="number" name="phone" id="phone" placeholder="Phone">
+    <input type="email" id="email" placeholder="Email" name="email">
   </div>
-    <textarea name="" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-    <button id="send">Send <i class="fa-sharp fa-solid fa-paper-plane"></i></button>
+    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+    <button onclick="sendMail()" id="send">Send <i class="fa-sharp fa-solid fa-paper-plane"></i></button>
   </form>
 
 </footer>
 
-<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
-  function sendEmail(){
-    Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "kevinmaguprofessional@gmail.com",
-    Password : "B6CCE407A636839B8E8B02C9559DA9BC41FE",
-    To : 'wanjaukevinmagu@gmail.com',
-    From : document.getElementById('email').value,
-    Subject : "Porfolio Message",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
+  function sendMail(){
+  const formID = document.querySelector('#sendemailform');
+const serviceID = "service_58s96xd";
+const templateID = "template_vydlttg";
+
+emailjs.sendForm(serviceID, templateID,formID)
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });
   }
 </script>
 <script src="app.js"></script>
