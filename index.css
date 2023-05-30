@@ -992,14 +992,14 @@ ul li a {
     margin-left: 50px;
   }
   #cv-icon{
-    margin-left: 6px;
+    margin-left: 26px;
   }
   form{
     display: flex;
     font-family: 'Genos', sans-serif;
     font-size: 26px;
     color: white;
-    margin-left: 90px;
+    margin-left: 290px;
   }
   form input{
     width: 80%;
@@ -1029,6 +1029,24 @@ ul li a {
     font-size: 22px;
     margin-top: 9px;
     font-weight: bold;
+  }
+  #madeby{
+    margin-left: 100px;
+    font-family: 'Genos', sans-serif;
+    font-size: 26px;
+    color: white;
+  }
+  #madeby i{
+    color: red;
+    animation: love 0.6s ease-in-out infinite alternate;
+  }
+  @keyframes love {
+    0%{
+      transform: scale(.5);
+    }
+    100%{
+      transform: scale(.8);
+    }
   }
 
   
