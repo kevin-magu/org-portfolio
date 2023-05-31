@@ -118,7 +118,7 @@ body {
 }
 
 nav {
-    position: relative;
+    position: relatve;
 }
 
 ul {
@@ -251,7 +251,7 @@ ul li a {
 #aboutme {
     justify-content: center;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .card {
@@ -1049,5 +1049,20 @@ ul li a {
     }
   }
 
+  /*Media queries*/
+  @media only screen and (max-width: 1360px){
+    .canvanav {
+      margin-left: 20px;
+      transition: .5s ease-in;
+    }
+    #aboutme{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .card{
+      width: 50%;
+    }
+  }
   
   
