@@ -1066,6 +1066,27 @@ ul li a {
   ul{
     left: 20%;
   }
+    .project-list-card{
+      transform: scale(.6);
+      margin-right: -180px;
+    }
+    .project-list-card:hover{
+      transform: scale(.61);
+    }
+    .book{
+      width: 50%;
+      margin-top: 40px;
+    }
+    .books-section{
+      display: flex;
+     
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    form{
+      margin-left: 100px;
+    }
   }
 
   
