@@ -1052,7 +1052,7 @@ ul li a {
   /*Media queries*/
   @media only screen and (max-width: 1360px){
     .canvanav {
-      margin-left: 20px;
+      margin-left: -30px;
       transition: .5s ease-in;
     }
     #aboutme{
@@ -1063,6 +1063,10 @@ ul li a {
     .card{
       width: 50%;
     }
+  ul{
+    left: 20%;
   }
+  }
+
   
   
