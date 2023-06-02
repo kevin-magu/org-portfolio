@@ -248,7 +248,6 @@ ul li a {
 
 .title-image {
     transform: scale(.6);
-    margin-left: 40px;
 }
 
 #aboutme {
@@ -499,7 +498,7 @@ ul li a {
     font-size: 30px;
 }
 .design-work-title{
-    margin-left: -43px;
+   
     margin-top: 70px;
 }
 
@@ -560,6 +559,12 @@ ul li a {
 .sliding-web-projects2{
     margin-left: 10%;
     margin-top: 40px;
+    position: relative;
+}
+#web-cards{
+  display: flex;
+  flex-wrap: nowrap;
+  height: auto;
 }
 .slider2 {
     position: relative;
@@ -615,7 +620,6 @@ ul li a {
 
  #web-dev-section-pic{
     width: 270px;
-    margin-left: 200px;
  }
  #graphic-d-section-pic{
     width: 270px;
@@ -626,6 +630,9 @@ ul li a {
   justify-content: center;
   align-items: center;
   margin-top: 100px;
+ }
+ .curious-title{
+  margin-top: -50px;
  }
  .sliding-web-projects{
     display: flexf;
@@ -1075,9 +1082,19 @@ ul li a {
   ul{
     left: 20%;
   }
+  #web-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ #projects-section{
+    justify-content: center;
+ }
     .project-list-card{
       transform: scale(.6);
-      margin-right: -180px;
+    
+      position: relative;
+      margin-top: 100px;
     }
     .project-list-card:hover{
       transform: scale(.61);
