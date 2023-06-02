@@ -1054,9 +1054,9 @@ ul li a {
 
   /*Media queries*/
   @media only screen and (max-width: 1360px){
-    .canvanav {
-      margin-left: -30px;
-      transition: .5s ease-in;
+    .canvanav, ul {
+      display: none;
+      
     }
     #aboutme{
       flex-direction: column;
@@ -1093,10 +1093,13 @@ ul li a {
     #madeby{
       margin-left: 40px;
     }
-    footer{
-      display: none;
+    
+    *{
+      outline: 2px yellow solid;
     }
-     
+    .hero-section{
+      margin-top: 180px;
+    }
   }
 
 
