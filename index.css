@@ -1093,8 +1093,12 @@ ul li a {
     #madeby{
       margin-left: 40px;
     }
+    footer{
+      display: none;
+    }
+     
   }
- 
+
 
   
   
