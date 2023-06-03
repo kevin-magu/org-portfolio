@@ -1132,9 +1132,14 @@ ul li a {
       align-items: center;
       margin-top: 490px;
     }
-    .soen{
-      
+    .soen-main{
+      width: 100%;
+      justify-content: center;
+      align-items: center;
     }
+    .soen{
+      display: none;
+     
   }
 
 
