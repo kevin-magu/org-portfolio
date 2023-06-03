@@ -498,8 +498,7 @@ ul li a {
     font-size: 30px;
 }
 .design-work-title{
-   
-    margin-top: 70px;
+
 }
 
 /*slider css*/
@@ -1065,6 +1064,13 @@ ul li a {
     }
   }
 
+  .design-main-title{
+    margin-top: 90px;
+  }
+  .web-dev-title{
+    margin-top: 0px;
+  }
+
   /*Media queries*/
   @media only screen and (max-width: 1360px){
     .canvanav, ul {
@@ -1082,23 +1088,15 @@ ul li a {
   ul{
     left: 20%;
   }
-  #web-card{
+  .sliding-web-projects{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 130px;
   }
  #projects-section{
     justify-content: center;
  }
-    .project-list-card{
-      transform: scale(.6);
-    
-      position: relative;
-      margin-top: 100px;
-    }
-    .project-list-card:hover{
-      transform: scale(.61);
-    }
     .book{
       width: 50%;
       margin-top: 40px;
@@ -1125,6 +1123,17 @@ ul li a {
     }
     body{
       overflow-x: hidden;
+    }
+    .project-list-main{
+      position: relative;
+      width: 100%;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      margin-top: 490px;
+    }
+    .soen{
+      
     }
   }
 
