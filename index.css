@@ -59,7 +59,7 @@ body {
 
 .hero-section .kevinimage {
     margin-top: -50px;
-    transform: scale(.7);
+    transform: scale(.5);
     position: absolute;
     right: -56px;
 }
@@ -1145,5 +1145,20 @@ ul li a {
     .soen{
       display: none;  
   }
+  .kevinimage{
+    transform: scale(.3);
+  }
+  #cv{
+    font-size: 20px;
+  }
+  .slider-image{
+    transform: scale(1.5);
 
+  }
+  .slider-image img{
+    max-height: 700px;
+  }
+  *{
+    outline: 2px yellow solid;
+  }
 }
