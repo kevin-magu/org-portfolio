@@ -1385,5 +1385,9 @@ form p{
     transform: scale(.4);
     margin-top: -250px;
   }
+  .hero-section .kevinimage{
+    right: -40%;
+  }
 }
- 
+
+
