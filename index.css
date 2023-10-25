@@ -1214,6 +1214,9 @@ ul li a {
   .canvanav ul li i{
     display: none;
   }
+  .canvanav-ul{
+    display: none;
+  }
 
 #aboutme-icon::after, #designsamples-icon::after,#pricing-icon::after,#contacts-icon::after,#resources::after{
   display: none;
