@@ -1249,4 +1249,124 @@ ul li a {
   transform: scale(.7);
  }
 }
+@media screen and (max-width: 1075px) {
+  #madeby{
+    font-size: 16px;
+    margin-left: 0px;
+    width: 100%;
+  }
+  form{
+    transform: scale(.7);
+  }
+}
+@media screen and (max-width: 830px){
+  #cv{
+    margin-top: 20px;
+  }
+footer{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.madeby-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+#madeby{
+  margin-left: 40%;
+}
+}
+
+@media screen and (max-width: 700px){
+  .hero-section .kevinimage{
+    transform: scale(0.25);
+   bottom: -60px;
+   right: -25%;
+  }
+.welcome-message{
+  margin-top: 110px;
+  font-size: 20px;
+}
+
+.soen{
+  left: -40px;
+}
+.hero-section .android{
+  transform: scale(.2);
+  left: 35%;
+  bottom: -304px;
+}
+.card{
+  width: 80%;
+}
+.php-cert,.web-fundamentals-cert, .sql-cert,.html-cert {
+  margin-left: -120px;
+  transform: scale(.6);
+}
+#badge{
+  transform: scale(.2);
+}
+.slider{
+  left: -10%;
+}
+.thumbnail-container{
+  transform: scale(0.44);
+  margin-top: -28%;
+}
+.project-list-card{
+  transform: scale(0.57);
+  margin-top: -40px;
+}
+.design-work-title{
+  transform: scale(.4);
+}
+.design-title{
+  margin-top: 0px;
+}
+.thumbnail-container2{
+  transform: scale(0.36);
+  margin-left: -10px;
+  margin-top: -500px;
+  margin-bottom: 0px;
+}
+#outer-content{
+  font-size: 16px;
+}
+.curious-minds-central{
+  transform: scale(.3);
+}
+#learning-explanation{
+  font-size: 15px;
+  text-align: center;
+}
+.book{
+  width: 80%;
+}
+form{
+  flex-direction: column;
+  margin-left: 0px;
+  margin-top: -40px;
+}
+form p{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+#cv{
+  margin-left: 0px;
+  height: 40px;
+  margin-bottom: 0px;
+}
+.madeby-container{
+
+}
+#madeby{
+  margin-left: 130px;
+}
+}
  
