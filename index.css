@@ -173,7 +173,7 @@ ul li a {
 }
 
 #resources::after {
-    content: '  Resources';
+    content: 'Resources';
     font-size: 10px;
     font-family: 'Genos', sans-serif;
     margin-left: 1px;
@@ -186,7 +186,7 @@ ul li a {
     cursor: pointer;
 }
 
-.windows-facts {
+.windows-facts,.windows-facts2 {
     width: 280px;
     height: 130px;
     background-color: #CB6CE6;
@@ -199,6 +199,20 @@ ul li a {
     color: aliceblue;
     font-family: 'Genos', sans-serif;
     font-size: 20px;
+}
+.windows-facts2{
+  width: 280px;
+  height: auto;
+  background-color: #CB6CE6;
+  position: absolute;
+  top: 10px;
+  left: 90px;
+  border-radius: 10px;
+  padding: 20px;
+  display: none;
+  color: aliceblue;
+  font-family: 'Genos', sans-serif;
+  font-size: 20px;
 }
 
 .vscode-facts {
@@ -253,7 +267,7 @@ ul li a {
   width: auto;
     justify-content: center;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -1077,88 +1091,140 @@ ul li a {
   }
 
   /*Media queries*/
-  @media only screen and (max-width: 1360px){
-    .canvanav, ul {
-      display: none;
-      
-    }
-    #aboutme{
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .card{
-      width: 50%;
-    }
+ 
+ @media screen and (max-width: 1360px) {
+  .canvanav{
+    margin-left: -50px;
+  }
   ul{
-    left: 20%;
+    left: 17%;
+    transform: scale(.8);
   }
-  .sliding-web-projects{
+  .card-content p{
+    font-size: 17px;
+  }
+  #about-me{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 130px;
+    flex-direction: column;
   }
- #projects-section{
-    justify-content: center;
- }
-    .book{
-      width: 50%;
-      margin-top: 40px;
-    }
-    .books-section{
-      display: flex;
-     
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    form{
-      margin-left: 100px;
-    }
-    #madeby{
-      margin-left: 40px;
-    }
-
-    .hero-section{
-      margin-top: 180px;
-    }
-    .welcome-message{
-      font-size: 25px;
-    }
-    body{
-      overflow-x: hidden;
-    }
-    .project-list-main{
-      position: relative;
-      width: 100%;
-      justify-content: center;
-      display: flex;
-      align-items: center;
-      margin-top: 490px;
-    }
-    .soen-main{
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-    }
-    .soen{
-      display: none;  
+  .card{
+    width: 30%;
   }
-  .kevinimage{
-    transform: scale(.3);
-  }
-  #cv{
-    font-size: 20px;
+  .slider{
+    display: flex;
+    flex-wrap: wrap;
   }
   .slider-image{
-    transform: scale(1.5);
+    left: 15%;
+  }
+  .thumbnail-container{
+    margin-left: 10px;
+  }
+  .project-list-main{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-list-card{
+    position: relative;
+    margin-top: 80px;
+    margin-left: 340px;
+  } 
+  #learning-explanation{
+    margin-left: 0px;
+    font-size: 20px;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+  }
+  .books-section{
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .book{
+    width: 60%;
+    margin-top: 30px;
+  }
+  #learning-section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #cv{
+    font-size: 15px;
+    height: 46px;
+  }
+  form{
+    margin-left: 100px;
+  }
+  #madeby{
+    margin-left: 50px;
+  }
+ }
+ @media screen and (max-width: 1230px) {
+  .canvanav{
+    margin-left: -135px;
+  }
+  .hero-section .android{
+    transform:  scale(.3);
+    bottom: -266px;
+    left: 10%;
+  }
+  #graphic-design-section{
+    
+  }
+  .thumbnail-container2 {
+    position: relative;
+    flex-direction: row;
+    margin-top: -190px;
+    margin-bottom: 100px;
+  }
+  .thumbnail2 img{
+    width: 150px;
+  }
+  .hero-section .kevinimage{
+    position: absolute;
+    bottom: -190px;
+    transform: scale(.4);
 
   }
-  .slider-image img{
-    max-height: 700px;
+  .welcome-message {
+    width: 80%;
   }
-  *{
-    outline: 2px yellow solid;
+  .hero-section{
+    display: flex;
+    flex-direction: column;
+    max-height: 720px;
   }
+ }
+ @media screen and (max-width: 1075px) {
+  .soen{
+    transform: scale(.3);
+    left: -20px;
+  }
+  .hero-section{
+    margin-top: 170px;
+  }
+  .canvanav{
+    display: none;
+  }
+  .canvanav ul li i{
+    display: none;
+  }
+
+#aboutme-icon::after, #designsamples-icon::after,#pricing-icon::after,#contacts-icon::after,#resources::after{
+  display: none;
+ }
+ .hero-section .windows::after{
+  content: 'Menu';
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  position: relative;
+ }
+ .windows-facts{
+  display: none;
+ }
 }

@@ -1,5 +1,6 @@
 let windowsPic = document.querySelector('.windows');
 let windowsFacts = document.querySelector('.windows-facts');
+let windowsFacts2 = document.querySelector('.windows-facts2');
 let vscodePic = document.querySelector('.vscode');
 let vscodeFacts = document.querySelector('.vscode-facts');
 let githubFacts = document.querySelector('.github-facts');
@@ -33,10 +34,21 @@ let projectList = document.querySelector('.project-list-card');
 
 const formID = document.querySelector('#sendemailform');
 function dWindowsFacts() {
+  var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+  if(windowWidth > 1075){
     windowsFacts.style.display = 'block';
     setTimeout(function(){
         windowsFacts.style.display = 'none';
     }, 10000); //disappear after 10s
+  }else if(windowWidth <= 1075){
+    windowsFacts2.style.display = 'block';
+    setTimeout(function(){
+        windowsFacts2.style.display = 'none';
+    }, 10000); //disappear after 10s
+  }
+   
+
 }
 
 function dVscodeFacts(){
