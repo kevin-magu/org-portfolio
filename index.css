@@ -1398,7 +1398,7 @@ form p{
     margin-top: -40px;
   }
   .hero-section .kevinimage{
-    
+    left: -70%;
   }
   .php-cert,.web-fundamentals-cert, .sql-cert,.html-cert {    
     transform: scale(.4);
