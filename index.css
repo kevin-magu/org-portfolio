@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    outline: 2px yellow solid;
 }
 
 html {
@@ -13,7 +12,6 @@ body {
     background: #27282b;
     overflow-x: hidden;
 }
-eleme
 
 .hero-section {
     position: relative;
