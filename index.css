@@ -1218,6 +1218,9 @@ ul li a {
 #aboutme-icon::after, #designsamples-icon::after,#pricing-icon::after,#contacts-icon::after,#resources::after{
   display: none;
  }
+ #aboutme-icon, #designsamples-icon,#pricing-icon,#contacts-icon,#resources{
+  display: none;
+ }
  .hero-section .windows::after{
   content: 'Menu';
   font-size: 25px;
@@ -1227,4 +1230,17 @@ ul li a {
  .windows-facts{
   display: none;
  }
+ #aboutme{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ .card{
+  width: 50%;
+ }
+ .slider-image{
+  left: 10%;
+ }
 }
+ 
