@@ -953,8 +953,8 @@ ul li a {
   .book:hover .cover {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-    -webkit-transform: rotatey(-80deg);
-    -ms-transform: rotatey(-80deg);
+    -webkit-transform: rotatey(-90deg);
+    -ms-transform: rotatey(-90deg);
     transform: rotatey(-80deg);
   }
   
@@ -1392,8 +1392,14 @@ form p{
 @media screen and (max-width: 400px){
   #aboutme{
     margin-left: 20px;
+    margin-top: -70px;
   }
-
+  .about-me-main{
+    margin-top: -40px;
+  }
+  .hero-section .kevinimage{
+    
+  }
   .php-cert,.web-fundamentals-cert, .sql-cert,.html-cert {    
     transform: scale(.4);
   }
@@ -1413,6 +1419,14 @@ form p{
     transform: scale(.2);
     margin-top: -530px;
   }
+  .curious-title{
+    margin-left: -30px;
+    margin-top: -40px;
+  }
+  #learning-explanation{
+    margin-top: -40px;
+  }
+
 }
 
 
