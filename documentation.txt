@@ -1,0 +1,46 @@
+1. `<!DOCTYPE html>` declaration specifying the document type as HTML5.
+
+2. `<html>` element with the `lang` attribute set to "en," indicating the language of the document.
+
+3. `<head>` section containing various meta tags, external stylesheets, fonts, and JavaScript libraries.
+
+   - External font from Google Fonts is imported.
+   - External Font Awesome icons library is linked.
+   - External CSS stylesheet (`index.css`) is linked.
+   - Several meta tags for character set, compatibility, and viewport settings.
+   - The title of the page is set to "Kevin."
+
+4. `<body>` element representing the main content of the portfolio.
+
+   - A navigation bar (`<nav>`) is present at the top of the page with links to different sections of the portfolio.
+   - An introductory section with an image and welcome message.
+   - Images of various technology icons (e.g., Apple, GitHub) that trigger facts when clicked.
+   - Sections for different categories, including "About Me," "Professional Experience," "Education," "Skills," "Interests & Hobbies," "Projects," and "Learning."
+   - Each project section uses a terminal-like interface to provide project information.
+   - A section for showcasing web design and graphic design projects.
+   - A section for upcoming learning content.
+   - A footer with links to download a CV and a contact form.
+
+### Key Features and Functionalities
+
+1. Navigation bar: Allows users to navigate to different sections of the portfolio.
+2. Animated facts: Clicking on technology icons triggers pop-up facts.
+3. Interactive project sections: Projects are displayed with a terminal-like interface, which includes a title and description.
+4. Image sliders: Web design and graphic design projects are displayed with image sliders, allowing users to view multiple project images.
+5. Learning section: A section for upcoming learning content with book covers.
+6. Contact form: Users can send messages to Kevin through the contact form.
+7. Tilt effect: Certain elements, like the hero section and cards, have a subtle tilt effect for an interactive look.
+
+### JavaScript Functions
+
+The portfolio website uses JavaScript functions for interactivity:
+
+- `dAppleFacts()`, `dGithubFacts()`, `dVscodeFacts()`, `dWindowsFacts()`: These functions handle the display of technology facts.
+- Functions like `closePortfolio()`, `closeEcommerce()`, and others handle closing project sections.
+- Functions like `thumbnailClickHandler()` handle image slider functionality.
+
+### External Libraries
+
+- The portfolio website uses the Vanilla Tilt library for the tilt effect on certain elements.
+- External libraries like Vanilla Tilt and Font Awesome are linked for additional functionality and styling.
+

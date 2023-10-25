@@ -1389,5 +1389,30 @@ form p{
     right: -40%;
   }
 }
+@media screen and (max-width: 400px){
+  #aboutme{
+    margin-left: 20px;
+  }
+
+  .php-cert,.web-fundamentals-cert, .sql-cert,.html-cert {    
+    transform: scale(.4);
+  }
+  .card{
+    width: 90%;
+  }
+  .slider{
+    left: -20%;
+  }
+  .project-list-card{
+    margin-left: 300px;
+  }
+  .sliding-web-projects2{
+    margin-left: -22px;
+  }
+  .thumbnail-container2 {
+    transform: scale(.2);
+    margin-top: -530px;
+  }
+}
 
 
