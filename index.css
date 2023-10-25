@@ -1302,6 +1302,7 @@ footer{
 }
 .card{
   width: 80%;
+  margin-top: 80px;
 }
 .php-cert,.web-fundamentals-cert, .sql-cert,.html-cert {
   margin-left: -120px;
@@ -1320,6 +1321,9 @@ footer{
 .project-list-card{
   transform: scale(0.57);
   margin-top: -40px;
+}
+.project-list-card:hover{
+  transform: scale(.5) rotate(1deg);
 }
 .design-work-title{
   transform: scale(.4);
@@ -1363,10 +1367,23 @@ form p{
   margin-bottom: 0px;
 }
 .madeby-container{
-
+  margin-bottom: 40px;
 }
 #madeby{
   margin-left: 130px;
 }
+}
+@media screen and (max-width: 500px){
+  .welcome-message{
+    font-size: 18px;
+    margin-left: 20px;
+  }
+  .hero-section .android{
+    left: 24%;
+  }
+  .thumbnail-container{
+    transform: scale(.4);
+    margin-top: -250px;
+  }
 }
  
